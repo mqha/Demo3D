@@ -480,10 +480,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44bcc7c34661cc44fb98587ccd326deb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angleOverDistance: 0
-  cameraHolder: {fileID: 0}
-  minPitch: -18
-  maxPitch: 18
+  angleOverDistance: 2
+  cameraHolder: {fileID: 1578048245}
+  minPitch: -80
+  maxPitch: 80
 --- !u!1001 &1027972055
 PrefabInstance:
   m_ObjectHideFlags: 0
