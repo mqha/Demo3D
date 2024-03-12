@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -334,7 +334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012382903352, guid: a2185de06c434b84e8a36835c77d3ca4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.469
+      value: 0.678
       objectReference: {fileID: 0}
     - target: {fileID: 4000012382903352, guid: a2185de06c434b84e8a36835c77d3ca4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -342,7 +342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012382903352, guid: a2185de06c434b84e8a36835c77d3ca4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.42
+      value: 0.402
       objectReference: {fileID: 0}
     - target: {fileID: 4000012382903352, guid: a2185de06c434b84e8a36835c77d3ca4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -661,7 +661,19 @@ MonoBehaviour:
   shootSound: {fileID: 1539602145}
   onShoot:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1121318874}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1121318879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,6 +707,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1121318883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121318874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93974e1075fb89545966753c8c069af9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muzzleImage: {fileID: 0}
+  duration: 0
 --- !u!1 &1250728167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,4 +1188,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4b55c71b22682249992f4d6dfc417a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 1764654978243476, guid: a98b15aa948478849b54661e4d9a317e, type: 3}
