@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GunMuzzle : MonoBehaviour
 {
-    [SerializeField] private Transform muzzleImage;
-    [SerializeField] private float duration;
+    public Transform muzzleImage;
+    public float duration;
 
     private void Start()
     {
         HideMuzzle();
     }
 
-    private void ShowMuzzle()
+    public void ShowMuzzle()
     {
         muzzleImage.gameObject.SetActive(true);
         float angle = Random.Range(0, 360f);
