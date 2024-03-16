@@ -19,10 +19,9 @@ public class GunMuzzle : MonoBehaviour
         muzzleImage.localEulerAngles = new Vector3(0, 0, angle);
         CancelInvoke();
         Invoke(nameof(HideMuzzle), duration);
+        Debug.Log("Bum");
     }
 
-    private void HideMuzzle()
-    {
-        muzzleImage.gameObject.SetActive(false);
-    }
+    private void HideMuzzle() => muzzleImage.gameObject.SetActive(false);
+
 }
