@@ -12,10 +12,7 @@ public class Health : MonoBehaviour
 
     private bool IsDead => healthPoint <= 0;
 
-    private void Start()
-    {
-        healthPoint = maxHealthPoint;
-    }
+    private void Start() => healthPoint = maxHealthPoint;
 
     public void TakeDamage(int damage)
     {
