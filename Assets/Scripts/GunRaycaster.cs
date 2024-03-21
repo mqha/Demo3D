@@ -21,7 +21,7 @@ public class GunRaycaster : MonoBehaviour
         }
     }
 
-    private void DeliverDamage(RaycastHit hitInfo)
+    public void DeliverDamage(RaycastHit hitInfo)
     {
         Health health = hitInfo.collider.GetComponent<Health>();
         if(health != null)
